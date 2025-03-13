@@ -84,7 +84,7 @@ def compute_cost(X, y, w, b):
     :return: cost (scalar)    : cost
     """
 
-    m = X.shape
+    m = X.shape[0]
     cost = 0.0
     for i in range(m):
         f_wb_i = np.dot(X[i], w) + b
